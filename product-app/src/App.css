@@ -1,0 +1,90 @@
+.App {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f3f3f3;
+  min-height: 100vh;
+}
+
+.varotra-header {
+  background-color: #131921;
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.varotra-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: #0073e6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button:hover {
+  background-color: #005bb5;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  background-color: #f3f3f3;
+  min-height: calc(100vh - 60px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .varotra-header {
+    flex-direction: column;
+    padding: 8px 10px;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    max-width: none;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+}

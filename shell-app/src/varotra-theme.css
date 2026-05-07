@@ -1,0 +1,177 @@
+/* Styles Varotra Azo Antoka partagés */
+.varotra-theme {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.varotra-header {
+  background-color: #131921;
+  color: white;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.varotra-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.varotra-search-bar {
+  flex-grow: 1;
+  max-width: 600px;
+  margin: 0 20px;
+  display: flex;
+}
+
+.varotra-search-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.varotra-search-button {
+  background-color: #0073e6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.varotra-search-button:hover {
+  background-color: #005bb5;
+}
+
+.varotra-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.varotra-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.varotra-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.varotra-main-content {
+  background-color: #f3f3f3;
+  min-height: calc(100vh - 60px);
+}
+
+.varotra-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.varotra-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.varotra-btn-primary {
+  background-color: #0073e6;
+  border: 1px solid #005bb5;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.varotra-btn-primary:hover {
+  background-color: #005bb5;
+}
+
+.varotra-btn-secondary {
+  background-color: #f7f7f7;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  color: #0f1111;
+  font-size: 13px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.varotra-btn-secondary:hover {
+  background-color: #e7e7e7;
+}
+
+.varotra-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #b12704;
+}
+
+.varotra-price .price-symbol {
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.varotra-price .price-whole {
+  font-size: 18px;
+}
+
+.varotra-price .price-fraction {
+  font-size: 12px;
+  vertical-align: super;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .varotra-header {
+    flex-direction: column;
+    padding: 8px 10px;
+  }
+
+  .varotra-search-bar {
+    margin: 10px 0;
+    max-width: none;
+  }
+
+  .varotra-nav-links {
+    gap: 10px;
+  }
+}
+
+.varotra-footer {
+  background-color: #0073e6;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.varotra-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.varotra-footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
